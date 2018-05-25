@@ -8,9 +8,9 @@ use App\User;
 
 class UserController extends Controller
 {
-    public function addUser(Request $request){
-		//$name=$request->input('FirstName')." ".$request->input('LastName');
-		$validatedData = $request->validate([
+    public function addUser(Request $request){		
+		$validator = \Validator::make($request->all(), 
+		[
 			'FirstName' => 'required',
 			'LastName' => 'required',
 			'BusinessName' => 'required',
@@ -22,9 +22,12 @@ class UserController extends Controller
 			'TypeOfBusiness' => 'required',
 			'email' => 'required|email|max:255|unique:users',
 			'password' => 'required'
-		]);
+		]
+		);
 		
-		if($validatedData){
+		if($validator->fails()) {
+			return response()->json(['Status'=>0,'Description'=>$validator->errors()]);
+        }else{
 			if($request->input('AddressLine2')){
 				$AddressLine2=$request->input('AddressLine2');
 			}else{
@@ -45,6 +48,9 @@ class UserController extends Controller
 				'email' => $request->input('email'),
 				'password' => $request->input('password')
 			]);
+			return response()->json(['Status'=>1,'Description'=>'User Successfully created.']);
 		}
+		
+		
 	}
 }
