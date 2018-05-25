@@ -1262,10 +1262,233 @@ a.accordian-a {
 }
 .youtube {
     height: 480px;
+	position:relative;
 }
 .vertical-align {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+}
+.jumbotron-image {
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+h2.up-to-8x{
+	font-size: 28px;
+    line-height: 32px;
+}
+.table-bordered td, .table-bordered th {
+    border: none;
+}
+.price-comparison .table th {
+    padding: 24px 12px;
+}
+.price-comparison .table th:nth-child(1) {
+    min-width: 200px;
+}
+.price-comparison .table th:first-child {
+    padding-left: 24px;
+}
+.price-table .table .primary th {
+    border-top: 0;
+    background: #37517e;
+}
+.price-table .table th:first-child {
+    border-top-left-radius: 3px;
+}
+.table>tbody>tr.primary>td, .table>tbody>tr.primary>th, .table>tbody>tr>td.primary, .table>tbody>tr>th.primary, .table>tfoot>tr.primary>td, .table>tfoot>tr.primary>th, .table>tfoot>tr>td.primary, .table>tfoot>tr>th.primary, .table>thead>tr.primary>td, .table>thead>tr.primary>th, .table>thead>tr>td.primary, .table>thead>tr>th.primary {
+    color: #fff;
+    background-color: #2e4369;
+}
+.table>.tbody, .table>tbody {
+    font-size: 14px;
+}
+.price-comparison .table th {
+    padding: 24px 12px;
+}
+.price-table .table td {
+    color: #6f8691;
+    vertical-align: middle;
+}
+.price-table .table th, .price-table .table td {
+    padding: 12px 24px;
+    vertical-align: middle;
+}
+.price-comparison .table th {
+    padding: 24px 12px;
+}
+.table>.tbody>dl>dd, .table>.tfoot>ol>li, .table>.thead>ol>li, .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 24px 16px;
+    line-height: 24px;
+    vertical-align: top;
+    border-top: 1px solid #f2f5f7;
+    border-bottom: 0;
+    -webkit-transition: border .15s ease;
+    -o-transition: border ease .15s;
+    transition: border .15s ease;
+}
+.table{
+	background-color: #fff;
+	display: table;
+}
+.featured-header-cell {
+    position: relative;
+    background: #2e4369 !important;
+    min-width: 120px;
+}
+.featured-cell:before {
+    position: absolute;
+    top: 0;
+    left: -34%;
+    width: 168%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(34, 48, 72, 0.05) 20%, rgba(255, 255, 255, 0) 21%, rgba(255, 255, 255, 0) 80%, rgba(34, 48, 72, 0.05) 80%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+}
+.featured-cell {
+    position: relative;
+    border: 0 !important;
+    background: white;
+}
+.featured-header-cell:before {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: #2e4369 !important;
+    content: "";
+}
+.featured-cell:after {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background: #f2f5f7;
+    content: "";
+}
+tr:last-of-type .featured-cell:after {
+    -webkit-clip-path: polygon(-40% 50%, 140% 50%, 140% 250%, -40% 250%);
+    position: absolute;
+    bottom: -16px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0px 3px 55px 16px rgba(34, 48, 73, .05);
+    clip-path: polygon(-40% 50%, 140% 50%, 140% 250%, -40% 250%);
+    content: "";
+}
+.no-monthly-fees{
+	color: #a8aaac;
+}
+.no-monthly-fees td {
+    border: 1px solid #f2f5f7;
+}
+.col-xs-2 {
+    width: 16.66666667%;
+}
+.m-t-4 {
+    margin-top: 32px;
+}
+.m-t-5 {
+    margin-top: 40px!important;
+}
+.p-t-3 {
+    padding-top: 24px!important;
+}
+.text-info{
+	color:#00b9ff!important;
+}
+.margin-auto{
+	margin:auto;
+}
+.section.quote {
+	background-image: url(https://lienzo.s3.amazonaws.com/images/gavin-lo-res.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.btn-inverse {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    -webkit-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.btn-inverse.focus, .btn-inverse:focus, .btn-inverse:hover {
+    color: #5d7079;
+    background-color: #fff;
+    border-color: #fff;
+}
+.p-b-5 {
+    padding-bottom: 40px!important;
+}
+.colored-dot {
+    position: relative;
+}
+.colored-dot::after {
+    bottom: 0;
+    color: #2ED06E;
+    content: '.';
+    position: absolute;
+    transform: translate(-100%, 0);
+}
+.coverage .tile {
+    cursor: default !important;
+    background-color: transparent !important;
+}
+.tile {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f2f5f7;
+    border: 1px solid #e2e6e8;
+    border-radius: 3px;
+    outline: none;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.currency-flag.currency-flag-gbp {
+    background-image: url(../image/us-flag.png);
+}
+.currency-flag.currency-flag-eur {
+    background-image: url(../image/eur.png);
+}
+.currency-flag.currency-flag-usd {
+    background-image: url(../image/flag-usd.png);
+}
+.currency-flag.currency-flag-aud{
+    background-image: url(../image/flag-ingland.png);
+}
+.currency-flag {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    background-size: cover;
+}
+.currency-flag {
+    -webkit-box-shadow: 0 0 1px 0 rgba(0,0,0,.6);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.6);
+}
+.m-r-1, .m-x-1 {
+    margin-right: 8px!important;
 }
